@@ -6,6 +6,7 @@
    - Logistic Regression with GD and SGD solvers and L2 norm
    - K Nearest Neighbors classifier
    - K Nearest Neighbors regressor
+   - Decision Tree classifier with entropy and gini impurity based information gain implementations, max_depth and min_samples_split options
    - Support Vector Machines classifier with L1 norm and kernels support
 
 - More to come soon! 

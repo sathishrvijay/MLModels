@@ -1,4 +1,4 @@
-# MLModels
+## Machine Learning Models
 
 - Implementation of common machine learning algorithms
    - K Means clustering with silhouette score analysis

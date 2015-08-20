@@ -1,0 +1,17 @@
+subscription,referrer,location,read_faq,pages_viewed
+None,slashdot,USA,1,18
+Premium,google,France,1,23
+Basic,digg,USA,1,24
+Basic,kiwitobes,France,1,23
+Premium,google,UK,0,21
+None,(direct),New Zealand,0,12
+Basic,(direct),UK,0,21
+Premium,google,USA,0,24
+None,slashdot,France,1,19
+None,digg,USA,0,18
+None,google,UK,0,18
+None,kiwitobes,UK,0,19
+Basic,digg,New Zealand,1,12
+None,slashdot,UK,0,21
+Basic,google,UK,1,18
+Basic,kiwitobes,France,1,19

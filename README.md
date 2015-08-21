@@ -7,7 +7,7 @@
    - K Nearest Neighbors classifier
    - K Nearest Neighbors regressor
    - Decision Tree classifier with entropy and gini impurity based information gain implementations, max_depth and min_samples_split options
-   - Support Vector Machines classifier with L1 norm and kernels support
+   - Support Vector Machines classifier with L2 norm and Linear, Gaussian and Polynomial kernels support
 
 - More to come soon! 
    

@@ -12,8 +12,8 @@ __Date__	 : 08/16/2015
 		- With (Binary) Logistic Regression, y is either 0 (-ve class) or 1 (+ve class)
 		- Hence we select a sigmoid function as the predictor yh
 		- yh = g(theta * x) where
-			- g(z) = 1/(1 - e^-z)
-			- g'(z) = g(z) * (1 - g(z))				// Can be derived from basic calculus
+			- g(z) = 1/(1 + e^-z)
+			- g'(z) = g(z) * (1 + g(z))				// Can be derived from basic calculus
 
 	Maximum Likelihood
 		- P(y = 1 | x, theta) = yh

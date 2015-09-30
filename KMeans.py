@@ -35,13 +35,13 @@ class KMeans:
 		## generate random cluster indices
 		cluster_indices = []
 		while len(cluster_indices) < self.numClusters :
-			draw = np.random.random_integers(0, X.shape[0] - 1, 1)
+			draw = np.random.random_integers(0, self.X.shape[0] - 1, 1)
 			if draw[0] not in cluster_indices :
 				cluster_indices.append(draw[0])
 		print ("Cluster indices: ", cluster_indices)
 		
 		for idx in cluster_indices:
-			self.clusterCenters.append(X[idx, :])
+			self.clusterCenters.append(self.X[idx, :])
 		self.clusterCenters = np.array(self.clusterCenters)
 
 
@@ -50,7 +50,7 @@ class KMeans:
 		for obs_idx in range(self.X.shape[0]) :
 			## Compute euclidean distances between the observation and every cluster center and pick the smallest distance
 			indices = [i for i in range(self.numClusters)]
-			distances = [euclidean(self.X[obs_idx, :], self.clusterCenters[c_idx, :]) for c_idx in range(self.numClusters)]
+			distances = [euclidean(self.X[obs_idx, :], self.clusterCenters[c_idx, :]) for c_idx in indices]
 			sorted_distances = sorted(zip(distances, indices))
 			#print (sorted_distances)
 

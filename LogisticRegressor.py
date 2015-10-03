@@ -53,7 +53,7 @@ from scipy.spatial.distance import minkowski
 from scipy.stats import linregress
 
 
-class LinearRegressor:
+class LogisticRegressor:
 	## L2 Regularization is implemented
 	def __init__(self, penalty = None, alpha = 0.001, update_method = 'SGD', lam = 10, tol = 0.0001) :
 		self.penalty = penalty
@@ -228,7 +228,7 @@ if __name__ == '__main__':
 	X = scaler.fit_transform(X)
 	X_test = scaler.transform(X_test)
 
-	clf = LinearRegressor(penalty, alpha = alpha, update_method = update_method, lam = lam)
+	clf = LogisticRegressor(penalty, alpha = alpha, update_method = update_method, lam = lam)
 	clf.fit(X, y)
 	score = clf.score(X_test, y_test)
 	print ("Prediction accuracy: %0.4f" %(score))
